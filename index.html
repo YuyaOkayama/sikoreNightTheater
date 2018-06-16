@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
+		<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-url="https://yuyaokayama.github.io/sikoreNightTheater/" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 		<meta charset=utf-8>
 		<title>SikoreNightTheater</title>
 		<h1>SikoreNightTheater</h1>
@@ -13,11 +14,11 @@
 		    <input type="file" id="input">
 		</div>
 		<div>
-		    <video id="video" width="500" height="400"></video>
+		    <video id="video" width="1000" height="800"></video>
 		</div>
 
 		<div style="width:500px; background-color:#333333; color:#ffffff;">
-			<p id = "keys">　a, s, d, f, h, m, o を押下している間、動画が再生されます</p>
+			<p id = "keys">　a, s, d, f, u, i, o を押下している間、動画が再生されます</p>
 		</div>
 
 
@@ -56,8 +57,8 @@
 					sFlag = true;
 				}
 
-				if(e.keyCode == 72 ){
-					hFlag = true;
+				if(e.keyCode == 85 ){
+					uFlag = true;
 				}
 
 				if(e.keyCode == 68 ){
@@ -68,8 +69,8 @@
 					fFlag = true;
 				}
 
-				if(e.keyCode == 77 ){
-					mFlag = true;
+				if(e.keyCode == 73 ){
+					iFlag = true;
 				}
 
 				if(e.keyCode == 79 ){
@@ -90,8 +91,8 @@
 					sFlag = false;
 				}
 
-				if(e.keyCode == 72 ){
-					hFlag = false;
+				if(e.keyCode == 85 ){
+					uFlag = false;
 				}
 
 				if(e.keyCode == 68 ){
@@ -102,8 +103,8 @@
 					fFlag = false;
 				}
 
-				if(e.keyCode == 77 ){
-					mFlag = false;
+				if(e.keyCode == 73 ){
+					iFlag = false;
 				}
 
 				if(e.keyCode == 79 ){
@@ -119,7 +120,7 @@
 
 			function playVideo(){
 				//すべてのキーが押されていることを確認する
-				if(aFlag && sFlag && hFlag && dFlag && fFlag && mFlag && oFlag){
+				if(aFlag && sFlag && iFlag && dFlag && fFlag && oFlag && oFlag){
 					//動画を再生
 					video.play();
 				}
